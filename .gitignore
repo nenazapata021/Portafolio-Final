@@ -1,0 +1,38 @@
+# See https://github.com/github/gitignore/blob/main/Node.gitignore
+# Depends on https://github.com/github/gitignore/blob/main/Next.gitignore
+
+# See https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+# See https://github.com/github/gitignore/blob/main/VisualStudioCode.gitignore
+
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+
+# Production
+/.next/
+/out/
+
+# Misc
+*.local.*
+/.pnp/
+.pnp.json
+ turbo.json
+ Turbopack.Docs.md
+
+# Environment variables
+.env*
+!.env.example
+
+# Debug
+*.log
+
+# Swap
+.sass-cache/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+#Bundle analyzer
+.bundle-analyzer-report.html
