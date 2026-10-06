@@ -1,16 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio de Edna - Desarrollo web y diseño" />
+    <meta name="keywords" content="portafolio, edna, desarrollo web, react" />
+    <title>Portafolio De Edna</title>
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,8..12,400;0,8..12,500;1,8..12,400&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0a0a0f;
+        --bg-subtle: #12121a;
+        --fg: #f0f0f5;
+        --muted: #6b6b80;
+        --accent: #00d4aa;
+        --accent-hover: #00f5c4;
+        --card: #1a1a24;
+        --border: #2a2a3a;
+        --radius: 12px;
+      }
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>doctor nicolas</title>
-      <script type="module" crossorigin src="./assets/index-kGvHFAyW.js"></script>
-      <link rel="stylesheet" crossorigin href="./assets/index-BQ53JdVT.css">
-    </head>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    <body>
-      <div id="root"></div>
-    </body>
-  </html>
-  
+      html {
+        font-family: "Inter", system-ui, sans-serif;
+        font-size: clamp(14px, 1.5vw, 16px);
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        min-height: 100vh;
+        line-height: 1.6;
+      }
+
+      #root {
+        min-height: 100vh;
+        width: 100%;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--accent-hover);
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .section {
+        padding: 80px 0;
+      }
+
+      .heading {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 700;
+        margin-bottom: 24px;
+        letter-spacing: -0.02em;
+      }
+
+      .subheading {
+        color: var(--muted);
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
