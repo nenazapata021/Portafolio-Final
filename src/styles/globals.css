@@ -133,3 +133,35 @@ section {
     opacity: 1;
   }
 }
+
+/* CSS Variables with AA minimum contrast */
+:root {
+  --background: #faf6f1;
+  --foreground: #3d2817;
+  --primary: #c8941e;
+  --primary-foreground: #fff;
+  --secondary: #e8dcc8;
+  --secondary-foreground: #3d2817;
+  --muted: #8b7355;
+  --muted-foreground: #f5efe6;
+  --accent: #d4a574;
+  --accent-foreground: #3d2817;
+}
+
+/* Force light background - use specific selector to override template */
+body {
+  background-color: #faf6f1;
+}
+
+.dark {
+  --background: oklch(.145 0 0);
+  --foreground: oklch(.985 0 0);
+  --primary: oklch(.985 0 0);
+  --primary-foreground: oklch(.205 0 0);
+  --secondary: oklch(.269 0 0);
+  --secondary-foreground: oklch(.985 0 0);
+  --muted: oklch(.269 0 0);
+  --muted-foreground: oklch(.708 0 0);
+  --accent: oklch(.269 0 0);
+  --accent-foreground: oklch(.985 0 0);
+}

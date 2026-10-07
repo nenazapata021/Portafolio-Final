@@ -18,10 +18,10 @@ export function StorySection({ storyImage }: StorySectionProps) {
 
           {/* Text Content */}
           <div className="space-y-6">
-            <h2 className="text-5xl md:text-6xl text-[#3D2817] hero-section" style={{ fontFamily: "'Playfair Display', serif" }}>
+            <h2 className="text-5xl md:text-6xl text-[var(--foreground)] hero-section" style={{ fontFamily: "'Playfair Display', serif" }}>
               Descripción personal
             </h2>
-            <div className="space-y-4 text-[#3D2817] leading-relaxed hero-section">
+            <div className="space-y-4 text-[var(--foreground)] leading-relaxed hero-section">
               <p>
                 Soy una persona cercana y sencilla que disfruta de los pequeños momentos. Le encanta ver 
                 películas y series, ya sea para desconectarse del día a día o para dejarse llevar por 

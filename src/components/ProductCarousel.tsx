@@ -97,10 +97,10 @@ export function ProductCarousel() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl text-[#3D2817] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-5xl md:text-6xl text-[var(--foreground)] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Proyectos
           </h2>
-          <p className="text-[#8B7355] max-w-2xl mx-auto">
+          <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto">
             Descubre los proyectos que he hecho.
           </p>
         </div>
@@ -119,6 +119,16 @@ export function ProductCarousel() {
                       className="w-full h-full object-contain"
                     />
                   </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <a
+                      href={`https://github.com/edna-casta/${product.id.toString().toLowerCase()}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white bg-[#3D2817]/40 rounded-lg px-3 py-1 text-sm inline-block"
+                    >
+                      Ver en GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -128,41 +138,74 @@ export function ProductCarousel() {
         {/* Description Below Carousel */}
         <div className="max-w-4xl mx-auto mt-12 px-4">
           <h3
-            className="text-3xl md:text-4xl text-[#3D2817] mb-6 text-center"
+            className="text-3xl md:text-4xl text-[var(--foreground)] mb-6 text-center"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             EVYE
           </h3>
 
-          <p className="text-[#8B7355] leading-relaxed text-center">
-            EVYE (Ecología Verde y Emocional) es una plataforma web que se une dos temas: el cuidado del medio ambiente y el bienestar emocional de las personas. Ofrece artículos y un canal de contacto, con una interfaz sencilla y pensada para todo el publico🌿💚.
+          <p className="text-[var(--muted-foreground)] leading-relaxed text-center">
+            EVYE (Ecología Verde y Emocional) es una plataforma web que seune dos temas: el cuidado del medio ambiente y el bienestar emocional de las personas. Ofrece artículos y un canal de contacto, con una interfaz sencilla y pensada para todo el publico🌿💚.
+            <br />
+            <span className="text-[var(--primary)] font-medium">Stack: Plataforma web</span>
+            <br />
+            <a
+              href="https://github.com/edna-casta/evye"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-[var(--primary)] transition-colors"
+            >
+              Ver proyecto →
+            </a>
           </p>
         </div>
         <div className="max-w-4xl mx-auto mt-12 px-4">
           <h3
-            className="text-3xl md:text-4xl text-[#3D2817] mb-6 text-center"
+            className="text-3xl md:text-4xl text-[var(--foreground)] mb-6 text-center"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Fruty Fantasty
           </h3>
 
-          <p className="text-[#8B7355] leading-relaxed text-center">
+          <p className="text-[var(--muted-foreground)] leading-relaxed text-center">
             Fruty Fantasty es una tienda dedicada a la venta de frutas frescas, seleccionadas con cuidado para llevar a tu mesa sabor, color y frescura en cada compra.
             Con un estilo alegre y cercano, su lema es "Un gustico al año no hace daño" invita a darse el gusto de disfrutar lo natural y delicioso.
             Fresas, moras y muchas otras frutas se unen en una propuesta dulce y fresca para toda la familia. 🍓🫐
+            <br />
+            <span className="text-[var(--primary)] font-medium">Stack: Frutas seleccionadas</span>
+            <br />
+            <a
+              href="https://github.com/edna-casta/fruty-fantasty"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-[var(--primary)] transition-colors"
+            >
+              Ver proyecto →
+            </a>
           </p>
         </div>
         <div className="max-w-4xl mx-auto mt-12 px-4">
           <h3
-            className="text-3xl md:text-4xl text-[#3D2817] mb-6 text-center"
+            className="text-3xl md:text-4xl text-[var(--foreground)] mb-6 text-center"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Refugio Rodante
           </h3>
 
-          <p className="text-[#8B7355] leading-relaxed text-center">
+          <p className="text-[var(--muted-foreground)] leading-relaxed text-center">
             Refugio Rodante es una plataforma web que busca resolver la escazes y desorganizacion de paqueaderos en Medellin. 
             A traves de reservas digitales, mapas interactivos, la aplicacion mejora la experiencia del conductor y contribuye a desgestionar zonas criticas de la ciudad 🚗.
+            <br />
+            <span className="text-[var(--primary)] font-medium">Stack: Vehículo adaptado</span>
+            <br />
+            <a
+              href="https://github.com/edna-casta/refugio-rodante"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-[var(--primary)] transition-colors"
+            >
+              Ver proyecto →
+            </a>
           </p>
         </div>
       </div>

@@ -37,25 +37,25 @@ export function Navigation() {
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-[#3D2817] hover:text-[#C8941E] transition-colors"
+              className="text-[var(--foreground)] hover:text-[var(--primary)] transition-colors"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection('historia')}
-              className="text-[#3D2817] hover:text-[#C8941E] transition-colors"
+              className="text-[var(--foreground)] hover:text-[var(--primary)] transition-colors"
             >
               Descripción personal
             </button>
             <button
               onClick={() => scrollToSection('catalogo')}
-              className="text-[#3D2817] hover:text-[#C8941E] transition-colors"
+              className="text-[var(--foreground)] hover:text-[var(--primary)] transition-colors"
             >
               Proyectos
             </button>
             <button
               onClick={() => scrollToSection('contacto')}
-              className="text-[#3D2817] hover:text-[#C8941E] transition-colors"
+              className="text-[var(--foreground)] hover:text-[var(--primary)] transition-colors"
             >
               Contacto
             </button>

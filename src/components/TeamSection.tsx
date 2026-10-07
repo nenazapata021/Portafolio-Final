@@ -18,10 +18,10 @@ export function TeamSection({ members }: TeamSectionProps) {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl text-[#3D2817] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-5xl md:text-6xl text-[var(--foreground)] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Descripcion laboral
           </h2>
-          <p className="text-[#3D2817] text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--foreground)] text-lg max-w-2xl mx-auto">
             Desarrolladora de software responsable y comprometida, con enfoque en el desarrollo web full-stack. Cumplo con los plazos, cuido la calidad del codigo y trabajo con diciplina para entragr soluciones funcionales y bien estructuradas.
             Habilidades: Python, React, Angular, JavaScript, TypeScript, Next.js, PHP, HTML, CSS3, Tailwind CSS y Payload.
           </p>

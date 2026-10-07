@@ -51,7 +51,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#D4A574]/20 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#E8DCC8] text-sm">
+          <p className="text-[var(--foreground)] text-sm">
             © 2026 Portafolio de Edna Castañeda. Todos los derechos reservados.
           </p>
         </div>
